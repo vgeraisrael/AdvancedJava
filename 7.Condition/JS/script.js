@@ -15,7 +15,7 @@ if(a < 5) {
     console.log("exactly");
 }
 
-a == 6? console.log("Ok") : console.log("False");
+a == 6 ? console.log("Ok") : console.log("False");
 
 switch (a) {
     case 4:
@@ -29,4 +29,12 @@ switch (a) {
         break;
     default:
         console.log("not even near");
+}
+
+const hamburger = 4;
+const fries = 0;
+if (hamburger >= 3 && fries ) {
+    console.log("Success");
+} else {
+    console.log("I`m Hungry");
 }
