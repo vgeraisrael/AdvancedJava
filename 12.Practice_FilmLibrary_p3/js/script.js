@@ -16,21 +16,21 @@ showMyDB();
 
 function start() {
     numberOfFilms = prompt("How many films did you watch already?", "");
-    while (numberOfFilms == '' || numberOfFilms == null || isNaN(numberOfFilms)) {
+    while (numberOfFilms === '' || numberOfFilms === null || isNaN(numberOfFilms)) {
         numberOfFilms = prompt("How many films did you watch already?", "");
     }
     personalMovieDB.count = numberOfFilms;
-};
+}
 
 function rememberMyFilms() {
     for (let i = 0; i < numberOfFilms; i++) {
-        let answer1Film = prompt("Name of one of your last seen films?", "unknown");
+        let answer1Film = prompt("Name of one of your last seen films?", "unknown").trim();
         if (answer1Film === null || answer1Film.length < 1 || answer1Film.length > 50) {
             alert("Wrong input");
             i--;
             continue;
         }
-        let answer1Rating = +prompt(`How do you rate ${answer1Film}?`, "0");
+        let answer1Rating = +prompt(`How do you rate ${answer1Film}?`, "0").trim();
         if (answer1Rating === null || answer1Film.length < 1 || answer1Film.length > 50) {
             alert("Wrong input");
             i--;
@@ -59,7 +59,7 @@ function showMyDB() {
 function writeYourGenres(){
     for(let i = 0; i <= 2; i++){
         let genre = prompt(`Your favorite genre #${i+1}`);
-        if(genre == '' || genre == null){
+        if(genre === '' || genre === null){
             continue;
         }
         personalMovieDB.genres[i] = genre;

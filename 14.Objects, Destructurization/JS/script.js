@@ -20,13 +20,13 @@ console.log(options);
 
 for (let key in options) {
     if (typeof options[key] === 'object') {
-        for (let i in options[key]){
+        for (let i in options[key]) {
             console.log(`Nested Property ${i} of property ${key}  is ${options[key][i]}`);
         }
     } else {
         console.log(`Property ${key} is ${options[key]}`);
     }
-};
+}
 
 console.log(Object.keys(options).length);
 options.makeTest();

@@ -38,3 +38,10 @@ if (hamburger >= 3 && fries ) {
 } else {
     console.log("I`m Hungry");
 }
+
+console.log((1 && 5 < 3 && "f"));
+console.log((1 && NaN && "f"));
+console.log((null || 5 || "f"));
+console.log((5 || 0));
+console.log((!0));
+console.log(("a" && !0));
