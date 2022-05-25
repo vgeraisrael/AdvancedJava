@@ -80,3 +80,4 @@ const newElseArray = [...arrayOneElse];
 console.log(newElseArray);
 
 const newObj = {...add};
+console.log(newObj);

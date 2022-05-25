@@ -6,7 +6,7 @@ arr.pop();
 console.log(arr);
 
 let compareNum = (a, b) => b - a;
-arr.push(10)
+arr.push(10);
 arr.sort(compareNum);
 arr.sort((a,b) => a - b);
 console.log(arr);
